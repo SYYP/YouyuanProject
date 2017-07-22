@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/fl"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="12"
+        ></FrameLayout>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:background="@color/footerDivider"
+        android:layout_height="1dp" />
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1.15"
+        android:orientation="horizontal"
+        >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:text="@string/xiaoxi"
+            android:textColor="@drawable/tab_word_color"
+            android:checked="true"
+            android:drawableTop="@drawable/tab_found"
+            style="@style/footRadioButton"
+            />
+        <RadioButton
+            android:id="@+id/rb2"
+            android:text="@string/liebiao"
+            android:drawableTop="@drawable/tab_lies"
+            style="@style/footRadioButton"
+            android:textColor="@drawable/tab_word_color"
+            />
+        <RadioButton
+        android:id="@+id/rb3"
+        android:text="@string/dongtai"
+        android:textColor="@drawable/tab_word_color"
+        android:drawableTop="@drawable/tab_dongtais"
+        style="@style/footRadioButton"
+        />
+        <RadioButton
+            android:id="@+id/rb4"
+            android:text="@string/wode"
+            android:drawableTop="@drawable/tab_mys"
+            style="@style/footRadioButton"
+            android:textColor="@drawable/tab_word_color"
+            />
+
+
+
+
+    </RadioGroup>
+</LinearLayout>

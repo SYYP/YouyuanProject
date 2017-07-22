@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/chat_bg">
+     <include
+         android:id="@+id/include"
+         android:layout_width="match_parent"
+         android:layout_height="40dp"
+         layout="@layout/include_register"
+
+         ></include>
+    <EditText
+        android:layout_below="@id/include"
+        android:id="@+id/register_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入手机号"
+        android:inputType="number"
+        android:maxLength="11"
+        android:layout_marginTop="35dp">
+        </EditText>
+    <LinearLayout
+        style="@style/ETcontainer_logon_register_pub_style"
+        android:paddingRight="0.0dip">
+        <TextView
+            style="@style/text_logon_register"
+            android:text="@string/logon_verifycode" />
+        <yipengyu.baway.com.youyuanproject.activtiy.DivEtidActivity
+            android:id="@+id/check_code_input"
+            style="@style/edittext_logon_register_pub_style"
+            android:layout_weight="1.0"
+            android:hint="@string/please_enter_verification_code"
+            android:inputType="number"
+            android:maxLength="10"
+            android:singleLine="true"
+            />
+        <ImageView
+            android:id="@+id/img_delete2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="14.0dip"
+            android:src="@drawable/btn_del_img_bg"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0.5dip"
+            android:layout_height="fill_parent"
+            android:background="@color/pub_color_six" />
+        <Button
+            android:id="@+id/get_phone_check_code_again_register"
+            style="@style/text_get_code"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/ETcontainer_logon_register_pub_style"
+        android:layout_marginTop="14.0dip">
+
+        <TextView
+            style="@style/text_logon_register"
+            android:text="设置密码"
+            android:id="@+id/textView3" />
+
+        <yipengyu.baway.com.youyuanproject.activtiy.DivEtidActivity
+            android:id="@+id/password"
+            style="@style/edittext_logon_register_pub_style"
+            android:layout_weight="1.0"
+            android:imeOptions="actionGo"
+            android:hint="6-20位数字+字母或符号组合"
+            android:password="true"
+            android:singleLine="true" />
+
+        <ImageView
+            android:id="@+id/img_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="18.0dip"
+            android:src="@drawable/btn_del_img_bg"
+            android:visibility="gone" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/btn_logon_register_pub_style"
+        android:layout_marginTop="30.0dip"
+        android:text="@string/comment_sub" />
+</LinearLayout>

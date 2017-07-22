@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/mesage2_pho"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+
+            android:src="@drawable/female_user_round_icon_default"/>
+
+
+        <LinearLayout
+            android:background="@color/cart2_coupon_price"
+            android:gravity="center_horizontal"
+            android:layout_toLeftOf="@id/mesage2_pho"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:id="@+id/message2_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:layout_marginRight="10dp"
+                android:text="你也好"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

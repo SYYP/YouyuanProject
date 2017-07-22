@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cpt_white_f2f2f2">
+    <View
+        android:id="@+id/chat_title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/order_item_detail_status_text_color"/>
+    <com.liaoinstan.springview.widget.SpringView
+        android:id="@+id/chat_spring"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+      <android.support.v7.widget.RecyclerView
+          android:id="@+id/chat_recycler"
+          android:stackFromBottom="true"
+          android:transcriptMode="alwaysScroll"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content">
+
+      </android.support.v7.widget.RecyclerView>
+    </com.liaoinstan.springview.widget.SpringView>
+
+    <LinearLayout
+    android:background="@color/cpt_white_f2f2f2"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_margin="5dp"
+        android:background="@drawable/yuyinselect"
+        android:id="@+id/btn_yuyin"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        />
+    <Button
+        android:id="@+id/btn_yuin2"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginLeft="6dp"
+        android:background="@drawable/ease_chatting_setmode_keyboard_btn"
+        android:visibility="gone" />
+   <LinearLayout
+       android:background="@color/nick_name"
+       android:layout_width="0dp"
+       android:layout_weight="1"
+       android:layout_height="wrap_content"
+       android:weightSum="1">
+       <yipengyu.baway.com.youyuanproject.widget.EditTextPreIme
+           android:id="@+id/et_sendmessage"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="@null"
+           android:maxLines="3"
+           android:minHeight="40dp"
+           android:paddingBottom="3dp"
+           android:paddingLeft="1dp"
+           android:paddingRight="1dp"
+           android:paddingTop="3dp"
+           android:textSize="18sp"
+           android:imeOptions="actionSend"
+           android:layout_weight="0.73"
+          />
+
+       <Button
+           android:id="@+id/btn_speak"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:background="@drawable/yuyin"
+           android:text="@string/speak"
+           android:textColor="@color/share_body"
+           android:gravity="center"
+           android:minHeight="40dp"
+           android:paddingBottom="3dp"
+           android:paddingLeft="1dp"
+           android:paddingRight="1dp"
+           android:paddingTop="3dp"
+           android:textSize="18sp"
+           android:visibility="gone"/>
+
+
+   </LinearLayout>
+    <Button
+        android:id="@+id/btn_biaoqing"
+        android:layout_width="24dip"
+        android:layout_height="24dip"
+        android:layout_margin="10dp"
+        android:background="@drawable/ease_chatting_biaoqing_btn_normal"
+
+        />
+    <Button
+        android:id="@+id/btn_more"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/ease_type_select_btn" />
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:layout_marginRight="4dp"
+            android:background="@drawable/send_select"
+            android:text="发送"
+            android:textSize="20sp"
+            android:padding="1dp"
+            android:visibility="gone"
+            android:textColor="@color/cpt_white_f2f2f2"
+             />
+
+</LinearLayout>
+    <LinearLayout
+       android:visibility="gone"
+        android:id="@+id/liner"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+      >
+    </LinearLayout>
+</LinearLayout>

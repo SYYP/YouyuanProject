@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">YouyuanProject</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="logon_verifycode">验证码</string>
+    <string name="please_enter_verification_code">请输入验证码</string>
+    <string name="comment_sub">下一步</string>
+    <string name="getCheckCode">获取验证码</string>
+    <string name="name">昵称:</string>
+    <string name="sex">性别:</string>
+    <string name="age">年龄:</string>
+    <string name="address">地区:</string>
+    <string name="abstracts">简介:</string>
+    <string name="error">手机号码或密码不能为空</string>
+    <string name="geshi">手机号码格式不正确</string>
+    <string name="pwd">密码不能为空</string>
+    <string name="yazheng">验证码错误</string>
+    <string name="edname">请填写你的详细内容</string>
+    <string name="carme">照相</string>
+    <string name="photo">相册选取</string>
+    <string name="send">验证码已发出请查收</string>
+    <string name="xiaoxi">消息</string>
+    <string name="liebiao">列表</string>
+    <string name="dongtai">动态</string>
+    <string name="wode">我的</string>
+    <string name="fujin">附近的人</string>
+    <string name="nicheng">昵称:</string>
+    <string name="gexing">个性签名:</string>
+    <string name="tianjia">添加为好友</string>
+    <string name="speak">按住 说话</string>
+
+
+</resources>
